@@ -1,0 +1,10 @@
+.inputContainer { background-color: #313131;}
+#messageInput{ width: 100%; }
+h2{color: #ffffff;}
+#submit[disabled] { background:red !important;}
+.message { border-bottom: 1px solid gold; margin-bottom: 10px;}
+#update{position: fixed; top: 0; left: 200%; bottom: 0; right: 0; background-color: rgba(0,0,0,0.85); transition: all 1s ease-out;}
+#update > .popup{position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%); width: 500px;}
+#update > .popup > input, #update > .popup > textarea{margin-bottom: 10px;}
+.popupActive{left: 0 !important;}
+#filter{background-color: #e74c3c; display: none;}

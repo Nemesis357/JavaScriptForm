@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid inputContainer">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 offset-2 py-3">
+                    <h2>Submit a Message</h2>
+                    <form id="form">
+                        <div class="form-group row">
+                            <label class="sr-only" for="nameInput">Name</label>
+                            <input type="text" class="form-control" id="nameInput" placeholder="Jane Doe">
+                        </div>
+                        <div class="form-group row">
+                            <label class="sr-only" for="emailInput">Email</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="Email">
+                        </div>
+                        <div class="form-group row">
+                            <label class="sr-only" for="messageInput">Message</label>
+                            <textarea name="message" class="form-control" id="messageInput" rows="5" placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-group row">
+                            <button type="submit" id="submit" class="btn btn-success" disabled="disabled">Submit</button>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="filter" class="container-fluid py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 offset-2 d-flex">
+                    <input id="filterInput" class="form-control mr-3" type="text" placeholder="Filter by name...">
+                    <button id="filterBtn" class="btn btn-primary">Filter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="containe-fluid outputContainer">
+        <div class="container">
+            <div class="row">
+                <div id="results" class="col-8 offset-2 py-2"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="update">
+        <div class="popup">
+            <h2>Update message</h2>
+            <input type="text" class="form-control" id="nameUpdate" placeholder="Jane Doe">
+            <input type="email" class="form-control" id="emailUpdate" placeholder="Email">
+            <textarea name="message" class="form-control" id="messageUpdate" rows="5" placeholder="Message"></textarea>
+            <button id="popupUpdate" class="btn btn-primary" data-id="0">Update</button>
+            <button id="popupCancel" class="btn btn-danger">Cancel</button>
+        </div>
+    </div>
+    
+    <script src="jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="filter.js"></script>
+</body>
+</html>
